@@ -7,9 +7,9 @@ services:
     ports:
       - "3000:80"
     labels:
-      - "traefik.http.routers.hello-world.rule=Host(`backoffice.${DNS_NAME}`)"
-      - "traefik.http.routers.hello-world.tls=true"
-      - "traefik.http.routers.hello-world.tls.certresolver=myresolver"
+      - "traefik.http.routers.backoffice.rule=Host(`backoffice.${DNS_NAME}`)"
+      - "traefik.http.routers.backoffice.tls=true"
+      - "traefik.http.routers.backoffice.tls.certresolver=myresolver"
     networks:
       - public-network
 
@@ -20,9 +20,9 @@ services:
     ports:
       - "3001:80"
     labels:
-      - "traefik.http.routers.hello-world.rule=Host(`www.${DNS_NAME}`)"
-      - "traefik.http.routers.hello-world.tls=true"
-      - "traefik.http.routers.hello-world.tls.certresolver=myresolver"
+      - "traefik.http.routers.frontoffice.rule=Host(`www.${DNS_NAME}`)"
+      - "traefik.http.routers.frontoffice.tls=true"
+      - "traefik.http.routers.frontoffice.tls.certresolver=myresolver"
     networks:
       - public-network
 
