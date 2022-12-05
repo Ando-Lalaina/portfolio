@@ -11,7 +11,7 @@ services:
       - "traefik.http.routers.backoffice.tls=true"
       - "traefik.http.routers.backoffice.tls.certresolver=myresolver"
     networks:
-      - public-network
+      - public
 
   frontend-frontoffice:
     build:
@@ -24,7 +24,7 @@ services:
       - "traefik.http.routers.frontoffice.tls=true"
       - "traefik.http.routers.frontoffice.tls.certresolver=myresolver"
     networks:
-      - public-network
+      - public
 
   #api-news:
 
@@ -35,7 +35,18 @@ services:
   #api-cloud-computing:
 
 
-  #api-about-me:
+  api-about-me:
+    build:
+      context: ./Backend/about-me
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    labels:
+      - "traefik.http.routers.api-about-me.rule=Host(`about-me.${DNS_NAME}`)"
+      - "traefik.http.routers.api-about-me.tls=true"
+      - "traefik.http.routers.api-about-me.tls.certresolver=myresolver"
+    networks:
+      - public
 
 
   #api-contact-me:
@@ -79,10 +90,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - $PWD/Others/acme.json:/data/acme.json
     networks:
-      - public-network
-      - frontend-backend
-      - backend-database
-
+      - public
 
   db-mongo:
     image: mongo:latest
@@ -107,10 +115,4 @@ services:
       - $PWD/Databases/mysql:/var/lib/mysql
 
 networks:
-  public-network:
-  frontend-backend:
-    external: false
-    internal: true
-  backend-database:
-    external: false
-    internal: true
+  public:
