@@ -7,3 +7,18 @@
 [submodule "Backend/api-cloud-computing"]
 	path = Backend/api-cloud-computing
 	url = https://github.com/Ando-Lalaina/portfolio-api-cloud-computing.git
+[submodule "Backend/software-dev"]
+	path = Backend/software-dev
+	url = https://github.com/Ando-Lalaina/portfolio-api-software-dev.git
+[submodule "Backend/news"]
+	path = Backend/news
+	url = https://github.com/Ando-Lalaina/portfolio-api-news.git
+[submodule "Backend/jwt"]
+	path = Backend/jwt
+	url = https://github.com/Ando-Lalaina/portfolio-api-jwt.git
+[submodule "Backend/contact-me"]
+	path = Backend/contact-me
+	url = https://github.com/Ando-Lalaina/portfolio-api-contact-me.git
+[submodule "Backend/cloud-computing"]
+	path = Backend/cloud-computing
+	url = https://github.com/Ando-Lalaina/portfolio-api-cloud-computing.git
