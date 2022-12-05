@@ -22,3 +22,9 @@
 [submodule "Backend/cloud-computing"]
 	path = Backend/cloud-computing
 	url = https://github.com/Ando-Lalaina/portfolio-api-cloud-computing.git
+[submodule "Frontend/backoffice"]
+	path = Frontend/backoffice
+	url = https://github.com/Ando-Lalaina/portfolio-backoffice.git
+[submodule "Frontend/frontoffice"]
+	path = Frontend/frontoffice
+	url = https://github.com/Ando-Lalaina/portfolio-frontoffice.git
