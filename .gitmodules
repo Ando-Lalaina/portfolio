@@ -1,6 +1,3 @@
-[submodule "Backend/about-me-test"]
-	path = Backend/about-me-test
-	url = https://github.com/Ando-Lalaina/portfolio-api-about-me.git
 [submodule "Backend/about-me"]
 	path = Backend/about-me
 	url = https://github.com/Ando-Lalaina/portfolio-api-about-me.git
