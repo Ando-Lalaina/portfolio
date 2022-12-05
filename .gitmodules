@@ -1,27 +1,36 @@
 [submodule "Backend/about-me"]
 	path = Backend/about-me
 	url = https://github.com/Ando-Lalaina/portfolio-api-about-me.git
+	branch = master
 [submodule "Backend/api-cloud-computing"]
 	path = Backend/api-cloud-computing
 	url = https://github.com/Ando-Lalaina/portfolio-api-cloud-computing.git
+	branch = master
 [submodule "Backend/software-dev"]
 	path = Backend/software-dev
 	url = https://github.com/Ando-Lalaina/portfolio-api-software-dev.git
+	branch = master
 [submodule "Backend/news"]
 	path = Backend/news
 	url = https://github.com/Ando-Lalaina/portfolio-api-news.git
+	branch = master
 [submodule "Backend/jwt"]
 	path = Backend/jwt
 	url = https://github.com/Ando-Lalaina/portfolio-api-jwt.git
+	branch = master
 [submodule "Backend/contact-me"]
 	path = Backend/contact-me
 	url = https://github.com/Ando-Lalaina/portfolio-api-contact-me.git
+	branch = master
 [submodule "Backend/cloud-computing"]
 	path = Backend/cloud-computing
 	url = https://github.com/Ando-Lalaina/portfolio-api-cloud-computing.git
+	branch = master
 [submodule "Frontend/backoffice"]
 	path = Frontend/backoffice
 	url = https://github.com/Ando-Lalaina/portfolio-backoffice.git
+	branch = master
 [submodule "Frontend/frontoffice"]
 	path = Frontend/frontoffice
 	url = https://github.com/Ando-Lalaina/portfolio-frontoffice.git
+	branch = master
