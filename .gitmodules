@@ -4,3 +4,6 @@
 [submodule "Backend/about-me"]
 	path = Backend/about-me
 	url = https://github.com/Ando-Lalaina/portfolio-api-about-me.git
+[submodule "Backend/api-cloud-computing"]
+	path = Backend/api-cloud-computing
+	url = https://github.com/Ando-Lalaina/portfolio-api-cloud-computing.git
