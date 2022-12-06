@@ -49,7 +49,18 @@ services:
       - public
 
 
-  #api-contact-me:
+  api-contact-me:
+    build:
+      context: ./Backend/contact-me
+      dockerfile: Dockerfile
+    ports:
+      - "4001:4001"
+    labels:
+      - "traefik.http.routers.api-contact-me.rule=Host(`contact-me.${DNS_NAME}`)"
+      - "traefik.http.routers.api-contact-me.tls=true"
+      - "traefik.http.routers.api-contact-me.tls.certresolver=myresolver"
+    networks:
+      - public
 
 
   #api-jwt:
@@ -101,7 +112,6 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD}
     volumes:
       - $PWD/Databases/mongo:/data/db
-
 
   db-mysql:
     image: mysql:latest
